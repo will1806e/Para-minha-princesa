@@ -38,8 +38,8 @@ h1 {
     /*expesura da fonte*/
     border: 6px solid purple;
     border-style: double;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin: 60px auto;
+    max-width: 810px;
 }
 
 /* Estiliza as seções da página */
@@ -151,6 +151,7 @@ section button:hover {
     margin: 5px 0;
     /* Espaçamento acima e abaixo do parágrafo */
     font-weight: 600;
+    text-align: justify;
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -181,8 +182,7 @@ img {
     position: static;
     border: 3px solid rgb(112, 0, 204);
     border-radius: 7px;
-    margin-top: 70px;
-    margin-left: 75px;
+    margin: 30px;
 }
 
 /* Estiliza o rodapé da página */
@@ -208,6 +208,8 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+
     h1 {
         font-size: 2rem;
         /* Tamanho da fonte em telas menores */
@@ -223,7 +225,7 @@ footer {
     }
 
     .resultados-pesquisa {
-        width: 40rem;
+        width: 40vh;
         /* Largura da caixa de resultados em telas menores */
         height: 40vh;
         /* Altura da caixa de resultados em telas menores */
@@ -238,39 +240,61 @@ footer {
 /* Responsividade para celulares */
 @media (max-width: 480px) {
 
+    .item-resultado {
+        flex: 1;
+    }
+
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         /* Tamanho da fonte em telas pequenas */
         letter-spacing: 0.05rem;
         /* Espaçamento entre letras em telas pequenas */
+        height: auto;
+        width: 401px;
     }
 
     section input {
-        width: 17rem;
+        width: 13rem;
         /* Largura total dos inputs em telas pequenas */
+        height: 2rem;
+        font-size: 0.77rem;
+        margin-top: -40px;
     }
 
     section button {
-        padding: 0.6rem 1rem;
+        padding: 0.5rem 0.8rem;
         /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         /* Tamanho da fonte do botão em telas pequenas */
     }
 
     .resultados-pesquisa {
-        width: 90%;
+        width: 80%;
         /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh;
+        height: auto;
         /* Altura da caixa de resultados em telas pequenas */
+        margin: 0 auto;
+        font-size: 0.84rem;
     }
 
     .item-resultado h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         /* Tamanho da fonte dos títulos em telas pequenas */
     }
 
     footer {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         /* Tamanho da fonte do rodapé em telas pequenas */
+        text-align: center;
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+
+    img {
+        max-width: 90%;
+        margin: 20px auto;
+        display: flex;
     }
 }
