@@ -245,12 +245,12 @@ footer {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.38rem;
         /* Tamanho da fonte em telas pequenas */
         letter-spacing: 0.05rem;
         /* Espaçamento entre letras em telas pequenas */
         height: auto;
-        width: 388px;
+        width: 371px;
     }
 
     section input {
